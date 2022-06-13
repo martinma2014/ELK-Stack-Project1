@@ -33,15 +33,14 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 
 
 The configuration details of each machine may be found below.
-_Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
 
 | Name     | Function             | IP Address              | Operating System                        |
 |----------|----------------------|-------------------------|-----------------------------------------|
-| Jump Box | Gateway              | 23.96.18.175 / 10.0.0.4 | Linux Ubuntu Server 18.04 LTS           |
-| ELK      |ELK SERVER            | 10.0.0.5                | Linux Ubuntu Server 18.04 LTS           |
-| web 1    |DVWA Server           | 10.0.0.6                | Linux Ubuntu Server 18.04 LTS           |
-| web 2    |DVWA Redundancy Server| 10.0.0.7                | Linux Ubuntu Server 18.04 LTS           |
-| web 3    |DVWA Redundancy Server| 10.0.0.8                | Linux Ubuntu Server 18.04 LTS           |
+| Jump Box | Gateway              | 40.78.45.208 / 10.0.0.7 | Linux Ubuntu Server 18.04 LTS           |
+| ELK      |ELK SERVER            | 10.1.0.4                | Linux Ubuntu Server 18.04 LTS           |
+| web 1    |DVWA Server           | 10.0.0.5                | Linux Ubuntu Server 18.04 LTS           |
+| web 2    |DVWA Redundancy Server| 10.0.0.6                | Linux Ubuntu Server 18.04 LTS           |
+| web 3    |DVWA Redundancy Server| 10.0.0.9                | Linux Ubuntu Server 18.04 LTS           |
 ### Access Policies
 
 The machines on the internal network are not exposed to the public Internet. 
@@ -60,9 +59,9 @@ A summary of the access policies in place can be found in the table below.
 |----------|---------------------|----------------------|
 | Jump Box | Yes                 |   8.4.123.106        |
 | ELK      | Yes                 |   8.4.123.106        |
-| web 1    | No                  |   10.0.0.4           |
-| web 2    | No                  |   10.0.0.4           |
-| web 3    | No                  |   10.0.0.4           |
+| web 1    | No                  |   10.0.0.7           |
+| web 2    | No                  |   10.0.0.7           |
+| web 3    | No                  |   10.0.0.7           |
 ### Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because it ensures consistency across the board, and that you would not have to worry about individual configurations being the same.
@@ -85,9 +84,9 @@ This ELK server is configured to monitor the following machines:
 
 | Name     | IP Address      |
 |----------|-----------------|
-|web 1     | 10.0.0.6        |
-|web 2     | 10.0.0.7        |
-|web 3     | 10.0.0.8        |
+|web 1     | 10.0.0.5        |
+|web 2     | 10.0.0.6        |
+|web 3     | 10.0.0.9        |
 
 We have installed the following Beats on these machines:
 - Filebeat and Metricbeat
@@ -102,7 +101,7 @@ In order to use the playbook, you will need to have an Ansible control node alre
 
 SSH into the control node and follow the steps below:
 - Copy the configuration and playbook YAML file to /etc/ansible/files folder.
-- Update the configuration file to include ELK server IP address 10.0.0.5
+- Update the configuration file to include ELK server IP address 10.1.0.4
 - Run the playbook, and navigate to Kibana to check that the installation worked as expected.
 
 _TODO: Answer the following questions to fill in the blanks:_
