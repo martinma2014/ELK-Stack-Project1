@@ -5,7 +5,7 @@ Utilized Microsoft Azure to create a virtual network and configure four stacked 
 
 The files in this repository were used to configure the network depicted below.
 
-![TODO: Update the path with the name of your diagram](Images/diagram_filename.png)
+https://github.com/martinma2014/ELK-Stack-Project1/blob/main/Images/Screen%20Shot%202022-06-13%20at%206.37.33%20AM.png
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the playbook file may be used to install only certain pieces of it, such as Filebeat.
 
