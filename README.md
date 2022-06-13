@@ -5,7 +5,7 @@ Utilized Microsoft Azure to create a virtual network and configure four stacked 
 
 The files in this repository were used to configure the network depicted below.
 
-<img width="678" alt="Screen Shot 2022-06-13 at 6 37 33 AM" src="https://user-images.githubusercontent.com/94402616/173401600-8735471b-4bdd-4579-94be-209510392492.png">
+<img width="821" alt="Screen Shot 2022-06-13 at 9 34 48 AM" src="https://user-images.githubusercontent.com/94402616/173401879-67f68057-03b2-46ac-8ec2-31bb8125aa30.png">
 
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the playbook file may be used to install only certain pieces of it, such as Filebeat.
@@ -77,7 +77,8 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![TODO: Update the path with the name of your screenshot of docker ps output](Images/docker_ps_output.png)
+<img width="1016" alt="Screen Shot 2022-06-13 at 7 35 32 AM" src="https://user-images.githubusercontent.com/94402616/173402015-f1929d33-99bf-4eb8-bcf9-8cb0b9487e9c.png">
+
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
